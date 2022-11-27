@@ -15,6 +15,7 @@ class MyHomePage extends StatefulWidget {
 class _MyHomeState extends State<MyHomePage>{
   final todosList = ToDo.todoList();
   List<ToDo> _foundToDo = [];
+
   final _todoController = TextEditingController();
 
   @override
@@ -46,7 +47,7 @@ class _MyHomeState extends State<MyHomePage>{
                           bottom: 20,
                         ),
                         child: const Text(
-                          'All ToDos',
+                          'All To-Dos',
                           style: TextStyle(
                             fontSize: 30,
                             fontWeight: FontWeight.w500,
@@ -109,7 +110,7 @@ class _MyHomeState extends State<MyHomePage>{
                     _addToDoItem(_todoController.text);
                   },
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: tdBlue,
+                    backgroundColor: tdPurple,
                     minimumSize: const Size(60, 60),
                     elevation: 10,
                   ),
